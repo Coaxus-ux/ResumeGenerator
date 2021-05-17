@@ -9,6 +9,17 @@
   border-radius: 22px;
   font-family: "DM Sans", sans-serif;
 }
+.home-background{
+  background-image: url(/img/back_home.jpg);
+}
+.centering{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
 .section-home {
   display: grid;
   grid-template-columns: auto auto;
@@ -22,9 +33,17 @@
 .right {
   margin: 50px 40px 40px 190px;
 }
-.right .caption {
+.caption {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 30px;
+  color: #FFFFFF;
+  
+}
+.caption-two {
+  margin: 0 150px 100px 122px;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFFFFF;
 }
 .imagen-container {
   margin: 100px;

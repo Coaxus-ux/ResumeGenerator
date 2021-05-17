@@ -3,8 +3,8 @@
 }
 .header-links a{
     margin: 2em;
-    color: #0384C6;
-    font-size:20px;
+    color: #FFFFFF;
+    font-size:25px;
     text-decoration: none;
 }
 .header-links a:first-child{
@@ -18,8 +18,8 @@
 
 .title h1{
     text-decoration: underline;
-    color: #222B46;
-    font-size: 41px;
+    color: #FFFFFF;
+    font-size: 50px;
     font-weight: 700;
     margin: 40px;
 }
