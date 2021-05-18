@@ -76,3 +76,11 @@
     background: url(resumen_png_1.png);
     filter: blur(3px);
 }
+.forms-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}

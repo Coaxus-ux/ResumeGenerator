@@ -21,4 +21,3 @@ function sizeWindow() {
   }
   return sizeWindow[1];
 }
-console.log(home);

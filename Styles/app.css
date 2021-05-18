@@ -9,6 +9,9 @@
   border-radius: 22px;
   font-family: "DM Sans", sans-serif;
 }
+.spacing{
+  margin-top: 50px;
+}
 .home-background{
   background-image: url(/img/back_home.jpg);
 }
@@ -40,7 +43,7 @@
   
 }
 .caption-two {
-  margin: 0 150px 100px 122px;
+  margin: 0 150px 20px 122px;
   font-weight: 400;
   font-size: 30px;
   color: #FFFFFF;
@@ -97,4 +100,3 @@
   font-size: 20px;
   font-weight: 700;
 }
-
