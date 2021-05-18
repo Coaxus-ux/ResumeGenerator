@@ -1,4 +1,7 @@
 const home = document.querySelector('#Home');
+let today = new Date().toISOString().substr(0, 10);
+document.querySelector("#dateForms").value = today;
+
 home.setAttribute("style", `min-height: ${sizeWindow()}px`,);
 function sizeWindow() {
   var sizeWindow = [0, 0];

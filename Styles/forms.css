@@ -1,72 +1,179 @@
 .form__group {
-	 position: relative;
-	 padding: 15px 0 0;
-	 margin-top: 10px;
-	 width: 50%;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
 }
- .form__field {
-	 font-family: inherit;
-	 width: 100%;
-	 border: 0;
-	 border-bottom: 2px solid #9b9b9b;
-	 outline: 0;
-	 font-size: 1.5rem;
-	 color: rgb(22, 21, 21);
-	 padding: 7px 0;
-	 background: transparent;
-	 transition: border-color 0.2s;
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.5rem;
+  color: rgb(22, 21, 21);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
 }
- .form__field::placeholder {
-	 color: transparent;
+.form__field::placeholder {
+  color: transparent;
 }
- .form__field:placeholder-shown ~ .form__label {
-	 font-size: 1.3rem;
-	 cursor: text;
-	 top: 20px;
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
 }
- .form__label {
-	 position: absolute;
-	 top: 0;
-	 display: block;
-	 transition: 0.2s;
-	 font-size: 1rem;
-	 color: #000000;
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #000000;
 }
- .form__field:focus {
-	 padding-bottom: 6px;
-	 font-weight: 700;
-	 border-width: 3px;
-	 border-image: linear-gradient(to right, #11998e, #38ef7d);
-	 border-image-slice: 1;
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
 }
- .form__field:focus ~ .form__label {
-	 position: absolute;
-	 top: 0;
-	 display: block;
-	 transition: 0.2s;
-	 font-size: 1rem;
-	 color: #11998e;
-	 font-weight: 700;
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
 }
- .form__field:required, .form__field:invalid {
-	box-shadow: none;
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
 }
-.forms-container{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap-reverse;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.flex-forms{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-between;
+.flex-forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
 }
 .flex-forms > div:nth-child(1) {
-    margin-right: 190px;
+  margin-right: 190px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "zone-one zone-one zone-one zone-one"
+    "zone-two zone-two zone-three zone-three"
+    "zone-two zone-two zone-three zone-three";
+}
+.zone-one {
+  grid-area: zone-one;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+.zone-two {
+  grid-area: zone-two;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+.zone-three {
+  grid-area: zone-three;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+.academic-jobs-flex {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+input[type="date"] {
+  display: block;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 0.75rem;
+
+  font-size: 1rem;
+  font-family: monospace;
+
+  border: 1px solid #8292a2;
+  border-radius: 0.25rem;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+    right 1rem center no-repeat;
+
+  cursor: pointer;
+}
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3acfff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-datetime-edit {
+}
+::-webkit-datetime-edit-fields-wrapper {
+}
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+  background: rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+  opacity: 0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  cursor: pointer;
+
+  color: rgba(0, 120, 250, 1);
+  background: rgba(0, 120, 250, 1);
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.05;
+}
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.15;
 }
