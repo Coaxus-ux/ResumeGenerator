@@ -3,16 +3,33 @@
   height: 3880px;
   left: calc(50% - 1296px / 2 - 8px);
   top: 51px;
-  background: #edf1f6;
+  background: #c6e4eb;
   margin: 10px auto;
   backdrop-filter: blur(24px);
   border-radius: 22px;
+  -webkit-box-shadow:0px 0px 100px 21px #b2b2b2 ;
+-moz-box-shadow:0px 0px 100px 21px #b2b2b2 ;
+box-shadow:0px 0px 100px 21px #b2b2b2 ;
   font-family: "DM Sans", sans-serif;
+}
+.resume-options{
+  
+  padding-top: 20px;
+  background-color: #867764;
+  backdrop-filter: blur(24px);
+}
+.form-options{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #867764;
 }
 .spacing{
   margin-top: 50px;
 }
 .home-background{
+  border-radius:20px 20px 0px 0px;
+  -moz-border-radius:20px 20px 0px 0px;
+  -webkit-border-radius:20px 20px 0px 0px;
   background-image: url(/img/back_home.jpg);
 }
 .centering{
