@@ -4,6 +4,20 @@
   margin-top: 10px;
   width: 50%;
 }
+.form__group2 {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 80%;
+}
+.form__group3 {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 35%;
+  
+}
 .form__field {
   font-family: inherit;
   width: 100%;
@@ -176,4 +190,52 @@ input[type="date"]:hover::-webkit-calendar-picker-indicator {
 }
 input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
   opacity: 0.15;
+}
+
+.education-work-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 0.2fr) 2.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "education-work-title education-work-title education-work-title education-work-title"
+    "education-work-subtitle-one education-work-subtitle-one education-work-subtitle-two education-work-subtitle-two"
+    "education-work-content-one education-work-content-one education-work-content-two education-work-content-two";
+}
+.education-work-title {
+  grid-area: education-work-title;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.education-work-subtitle-one {
+  grid-area: education-work-subtitle-one;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education-work-subtitle-two {
+  grid-area: education-work-subtitle-two;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education-work-content-one {
+  grid-area: education-work-content-one;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education-work-content-two {
+  grid-area: education-work-content-two;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
