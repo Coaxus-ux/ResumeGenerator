@@ -14,31 +14,11 @@ document.querySelector("#dateFormsJobStartOne").value = today;
 document.querySelector("#dateFormsJobFinishOne").value = today;
 
 buttonLetsGo.addEventListener("click", () => {
-  const userData = {
-    name: document.querySelector("#name").value,
-    proffession: document.querySelector("#proffession").value,
-    email: document.querySelector("#email").value,
-    phone: document.querySelector("#phone").value,
-    city: document.querySelector("#city").value,
-    country: document.querySelector("#country").value,
-    address: document.querySelector("#address").value,
-    aboutUser: document.querySelector("#aboutUser").value
-  };
-  const userEducation = {
-    universityOne: document.querySelector("#universityOne").value,
-    universityTwo: document.querySelector("#universityTwo").value,
-    degreeOne: document.querySelector("#degreeOne").value,
-    degreeTwo: document.querySelector("#degreeTwo").value,
-    dateUniversityStartCero: document.querySelector("#dateFormsEducationStartCero").value,
-    dateUniversityStartOne: document.querySelector("#dateFormsEducationStartOne").value,
-    dateUniversityFinishCero: document.querySelector("#dateFormsEducationFinishCero").value,
-    dateUniversityFinishOne: document.querySelector("#dateFormsEducationFinishCero").value
-  };
-  console.log(userData);
-  console.log(userEducation)
+  userInfoCall();
+  console.log(userData)
 });
 
-//home.setAttribute("style", `min-height: ${sizeWindow()}px`,);
+home.setAttribute("style", `min-height: ${sizeWindow()}px`);
 function sizeWindow() {
   var sizeWindow = [0, 0];
   if (typeof window.innerWidth != "undefined") {
@@ -55,8 +35,72 @@ function sizeWindow() {
   } else {
     sizeWindow = [
       document.getElementsByTagName("body")[0].clientWidth,
-      document.getElementsByTagName("body")[0].clientHeight,
+      document.getElementsByTagName("body")[0].clientHeight
     ];
   }
   return sizeWindow[1];
+}
+function userInfoCall(){
+  userData = {
+    name: document.querySelector("#name").value,
+    proffession: document.querySelector("#proffession").value,
+    email: document.querySelector("#email").value,
+    phone: document.querySelector("#phone").value,
+    city: document.querySelector("#city").value,
+    country: document.querySelector("#country").value,
+    address: document.querySelector("#address").value,
+    aboutUser: document.querySelector("#aboutUser").value,
+    university:{
+      universityOne: {
+        universityName: document.querySelector("#universityOne").value,
+        degrade: document.querySelector("#degreeOne").value,
+        date:{
+          start: document.querySelector("#dateFormsEducationStartCero").value,
+          finish: document.querySelector("#dateFormsEducationFinishCero").value
+        }
+      },
+      universityTwo: {
+        universityName: document.querySelector("#universityTwo").value,
+        degrade: document.querySelector("#degreeTwo").value,
+        date: {
+          start: document.querySelector("#dateFormsEducationStartOne").value,
+          finish: document.querySelector("#dateFormsEducationFinishCero").value
+        }
+      } 
+    },
+    skills: {
+      skillCero: {
+        name: document.querySelector('#skillOne').value,
+        percen: document.querySelector('#skillPercentOne').value
+      },
+      skillOne: {
+        name: document.querySelector('#skillTwo').value,
+        percen: document.querySelector('#skillPercentTwo').value
+      },
+      skillTwo: {
+        name: document.querySelector('#skillThree').value,
+        percen: document.querySelector('#skillPercentThree').value
+      },
+      skillThree: {
+        name: document.querySelector('#skillFour').value,
+        percen: document.querySelector('#skillPercentFour').value
+      },
+      
+    },
+    references: {
+      referenceOne: {
+        name: document.querySelector("#nameReference").value,
+        position: document.querySelector("#positionReference").value,
+        phone: document.querySelector("#phoneReference").value
+      },
+      referenceTwo: {
+        name: document.querySelector("#nameReferenceOne").value,
+        position: document.querySelector("#positionReferenceOne").value,
+        phone: document.querySelector("#phoneReferenceOne").value
+      }
+
+
+    }
+  };
+   return userData;
 }

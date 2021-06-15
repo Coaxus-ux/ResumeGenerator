@@ -2,7 +2,18 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\AnimeAPI"
+		},
+		{
+			"path": "..\\..\\OneDrive\\Documentos\\code"
+		},
+		{
+			"path": "..\\basics"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ResumeGenerator"
+	}
 }
