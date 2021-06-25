@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "..\\basics"
+		},
+		{
+			"path": "..\\Buscador"
 		}
 	],
 	"settings": {

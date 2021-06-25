@@ -15,7 +15,8 @@ document.querySelector("#dateFormsJobFinishOne").value = today;
 
 buttonLetsGo.addEventListener("click", () => {
   userInfoCall();
-  console.log(userData)
+  const dataJSON = JSON.stringify(userData);
+  localStorage.setItem("userData", dataJSON)
 });
 
 home.setAttribute("style", `min-height: ${sizeWindow()}px`);
@@ -98,8 +99,26 @@ function userInfoCall(){
         position: document.querySelector("#positionReferenceOne").value,
         phone: document.querySelector("#phoneReferenceOne").value
       }
-
-
+    },
+    work: {
+      workOne: {
+        position: document.querySelector("#positionOne").value,
+        workName: document.querySelector("#workOne").value,
+        description: {
+          dotOne: document.querySelector("#aboutWorkOne1").value,
+          dotTwo: document.querySelector("#aboutWorkOne2").value,
+          dotThree: document.querySelector("#aboutWorkOne3").value
+        }
+      },
+      workTwo: {
+        position: document.querySelector("#positionTwo").value,
+        workName: document.querySelector("#workTwo").value,
+        description: {
+          dotOne: document.querySelector("#aboutWorkTwo1").value,
+          dotTwo: document.querySelector("#aboutWorkTwo2").value,
+          dotThree: document.querySelector("#aboutWorkTwo3").value
+        }
+      }
     }
   };
    return userData;

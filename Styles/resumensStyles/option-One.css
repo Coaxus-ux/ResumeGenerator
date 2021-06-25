@@ -58,7 +58,7 @@
 .line-info-reference {
   margin: 2px 20px 2px 7px;
   height: 2px;
-  background-color:rgb(234, 234, 234);
+  background-color: rgb(234, 234, 234);
   grid-area: 4 / 1 / 5 / 4;
 }
 .experience-skills {
@@ -87,10 +87,10 @@
 .line {
   grid-area: line;
   margin: 20px 0 20px 0;
-  background:rgb(201, 71, 78); 
+  background: rgb(201, 71, 78);
   width: 8px;
 }
-.flex-name-icon{
+.flex-name-icon {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -98,62 +98,165 @@
   align-items: center;
   align-content: stretch;
 }
+.flex-name-icon2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+
+.container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 300px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "skill-one skill-three"
+    "skill-two skill-four";
+  width: 96.3%;
+  height: 12.9%;
+}
+
+.skill-one { grid-area: skill-one; }
+
+.skill-two { grid-area: skill-two; }
+
+.skill-three { grid-area: skill-three; }
+
+.skill-four { grid-area: skill-four; }
+
 /*--------------------STYLES-------------------- */
-.name-title{
-  color:white;
-  font-family: 'Arvo', serif;
+.name-title {
+  color: white;
+  font-family: "Arvo", serif;
   font-size: 55px;
   text-transform: uppercase;
   margin: 0;
 }
-.proffesion-title{
-  color:white;
-  font-family: 'Arvo', serif;
+.proffesion-title {
+  color: white;
+  font-family: "Arvo", serif;
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
 }
-.about-person{
-  font-family: 'Cabin', sans-serif;
-  color:white;
+.about-person {
+  font-family: "Cabin", sans-serif;
+  color: white;
   font-size: 12px;
   width: 550px;
   margin: 10px auto;
   text-align: center;
-  
 }
-.titles{
-  color:rgb(201, 71, 78);
-  font-family: 'Arvo', serif;
+.titles {
+  color: rgb(201, 71, 78);
+  font-family: "Arvo", serif;
   margin: 25px 0 15px 7px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.university-year, .university-degrade, .university-name{
-  font-family: 'Cabin', sans-serif;
+.university-year,
+.university-degrade,
+.university-name {
+  font-family: "Cabin", sans-serif;
   margin: 0 7px 0 7px;
 }
-.university-year, .university-name{
+.university-year,
+.university-name {
   font-weight: bold;
 }
-.address-div, .phone-div, .email-div{
-  font-family: 'Cabin', sans-serif;
+.address-div,
+.phone-div,
+.email-div {
+  font-family: "Cabin", sans-serif;
   margin: 0 7px 10px 7px;
 }
-.title-main{
+.title-main {
   margin: 3px 7px 5px 10px;
   font-weight: bold;
 }
-.fas{
+.fas {
   font-size: 20px;
   margin-left: 5px;
-  color: rgb(201, 71, 78);;
+  color: rgb(201, 71, 78);
 }
 
-.title-child{
+.title-child {
   margin: 0 7px 0 20px;
 }
-.reference{
-  font-family: 'Cabin', sans-serif;
+.reference {
+  font-family: "Cabin", sans-serif;
   margin: 0 7px 10px 7px;
+}
+.reference-info {
+  margin: 0 7px 2px 20px;
+}
+.container-work {
+  margin: 15px;
+  font-family: "Cabin", sans-serif;
+  display: grid;
+  grid-template-columns:  0.9fr 1.4fr; 
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 300px;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "work-one work-inf"
+    "work-two work-inf-two";
+}
+
+.work-one {
+  grid-area: work-one;
+}
+
+.work-inf {
+  grid-area: work-inf;
+}
+
+.work-two {
+  grid-area: work-two;
+}
+
+.work-inf-two {
+  grid-area: work-inf-two;
+}
+
+.div-inf {
+  text-transform: initial;
+}
+.div-inf p {
+  margin: 0;
+  font-size: large;
+}
+.div-inf p:first-child {
+  font-weight: bold;
+}
+.flex-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+.margin-negative{
+  margin-top: -15px;
+}
+.flex-info p{
+  margin: 0 10px 20px 2px; 
+}
+.flex-info li{
+  margin: 0;
+}
+
+.container-skills{
+  font-family: "Cabin", sans-serif;
+}
+.used{
+  color: rgb(234, 234, 234);
 }
