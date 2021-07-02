@@ -108,7 +108,9 @@ function userInfoCall(){
           dotOne: document.querySelector("#aboutWorkOne1").value,
           dotTwo: document.querySelector("#aboutWorkOne2").value,
           dotThree: document.querySelector("#aboutWorkOne3").value
-        }
+        },
+        start: document.querySelector("#dateFormsJobStartCero").value,
+        finish: document.querySelector("#dateFormsJobFinishCero").value
       },
       workTwo: {
         position: document.querySelector("#positionTwo").value,
@@ -117,7 +119,9 @@ function userInfoCall(){
           dotOne: document.querySelector("#aboutWorkTwo1").value,
           dotTwo: document.querySelector("#aboutWorkTwo2").value,
           dotThree: document.querySelector("#aboutWorkTwo3").value
-        }
+        },
+        start: document.querySelector("#dateFormsJobStartOne").value,
+        finish: document.querySelector("#dateFormsJobFinishOne").value
       }
     }
   };

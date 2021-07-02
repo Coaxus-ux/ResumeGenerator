@@ -134,9 +134,10 @@
 .name-title {
   color: white;
   font-family: "Arvo", serif;
-  font-size: 55px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0px;
+  text-align: center;
 }
 .proffesion-title {
   color: white;
@@ -179,6 +180,7 @@
 .title-main {
   margin: 3px 7px 5px 10px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .fas {
   font-size: 20px;
